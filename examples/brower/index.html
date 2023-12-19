@@ -1,0 +1,27 @@
+<!--
+ * @Description: Brian's code
+ * @FilePath: \wxc-tool\examples\brower\index.html
+ * @Author: Brian brian@gmail.com
+ * @Date: 2023-12-18 16:14:48
+ * @LastEditors: Brian brian@gmail.com
+ * @LastEditTime: 2023-12-19 11:16:03
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button id="btn">openChat</button>
+	</body>
+	<script type="module">
+		import { FreshChat, add } from "../../wxcTool.esm.js";
+		const { openChat } = new FreshChat("//fw-cdn.com/11098331/3828904.js");
+		btn.onclick = () => {
+			openChat();
+		};
+		console.log(add(1, 2));
+	</script>
+</html>
